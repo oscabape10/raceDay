@@ -1,25 +1,19 @@
 
-
+//Produce race number up to 1000.
 let raceNumber = Math.floor(Math.random() * 1000);
+//Variables.
 const registerEarly = true
-const runnerAge = 55
-//prouduce a race number.
-if (registerEarly === true && runnerAge > 18){
-    console.log (raceNumber + 1000);
+const runnerAge = 22
+//control flow statement that checks whether the runner is an adult AND registered early, Add 1000 to their raceNumber if this is true.
+if (registerEarly === true && runnerAge > 18){console.log (raceNumber + 1000);
 } 
-//if the runners are early and over 18.
-if (registerEarly === true && runnerAge > 18){
-    console.log ('Early adults will race at 9:30am and your race number will be.' + raceNumber + 1000);
-} 
-//if the runners are late and over 18.
-else if (registerEarly === false && runnerAge > 18){
+//control flow statement, will check age and registration time to determine race time.
+if (registerEarly === true && runnerAge > 18){console.log ('Early adults will race at 9:30am and your race number will be.' + raceNumber + 1000);
+} else if (registerEarly === false && runnerAge > 18){
   console.log('Late Adults will run at 11:00am and your race number will be.' + raceNumber + 1000);
-} 
-//if the runners are exactly 18 years old.
-else if (runerAge = 18 ){
-      console.log( 'Runner needs to fo to registration desk.'); 
+} else if (runerAge = 18 )
+  {console.log( 'Runner needs to fo to registration desk.'); 
   }
-// if runners are early and under 18..
-if (registerEarly === true && runnerAge < 18){
-    console.log ('Youth registrants will run at 12:30 pm and your race number will be.' + raceNumber);
+
+if (registerEarly === true && runnerAge < 18){console.log ('Youth registrants will run at 12:30 pm and your race number will be.' + raceNumber);
 } 
